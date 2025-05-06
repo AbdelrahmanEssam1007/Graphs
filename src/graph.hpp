@@ -11,8 +11,8 @@ class Graph{
   std::vector<std::vector<int>> adjacent;
 
   public:
-    Graph(int V);
+    explicit Graph(int V);
     void addEdge(int u, int v);
-    void topoSortUtil(int v, std::bitset<100>& visted, std::stack<int>& s);
+    void topoSortUtil(int v, std::bitset<100>& visited, std::stack<int>& s);
     void topoSort();
 };
