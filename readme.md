@@ -31,13 +31,13 @@ Technology Stack
 
     Data Structures:
 
-        Graph Representation: Adjacency list or matrix for storing the graph.
+        Graph Representation: Adjacency list for storing the graph.
 
         Priority Queue: Used in Prim’s algorithm to select the minimum-weight edge efficiently.
 
         Stack: For topological sorting (in DFS implementation).
 
-        Arrays or Vectors: To keep track of visited nodes and edge weights.
+        Vectors: To keep track of visited nodes and edge weights.
 
 Project Members
 
