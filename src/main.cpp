@@ -28,6 +28,8 @@ int main(){
     weightedGraph.addEdge(3,1,1);
     weightedGraph.addEdge(2,1,0);
     weightedGraph.addEdge(1,0,8);
+    weightedGraph.addEdge(8, 7, 2);
+    weightedGraph.addEdge(9, 8, 1);
 
     weightedGraph.primMST(0);
 }

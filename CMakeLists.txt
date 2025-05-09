@@ -4,4 +4,4 @@ project(graphs)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(graphs src/main.cpp src/graph.cpp)
+add_executable(graphs src/main.cpp src/graph.cpp src/weightedGraph.cpp)

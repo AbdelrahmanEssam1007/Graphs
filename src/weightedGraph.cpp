@@ -1,6 +1,3 @@
-// C++ program to represent undirected and weighted graph
-// using STL. The program basically prints adjacency list
-// representation of graph and constructs MST using Prim's algorithm
 #include <vector>
 #include <iostream>
 #include <stack>
@@ -61,6 +58,12 @@ void weightedGraph::printMST(std::vector<int> &parent) {
                     u = v;
                 }
             }
+
+            if (u == -1) {
+                std::cerr << "Graph is not connected\n";
+                return;
+            }
+          
             mstSet[u] = true;   
             // Update keys and parent for adjacent vertices
             for (auto &[v, weight] : adj[u]) {
