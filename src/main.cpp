@@ -18,7 +18,7 @@ int main(){
 
     graph.topoSort();
 
-    weightedGraph weightedGraph(10);
+    WeightedGraph weightedGraph(10);
     weightedGraph.addEdge(7,6,5);
     weightedGraph.addEdge(7,5,4);
     weightedGraph.addEdge(6,4,3);

@@ -1,18 +1,15 @@
 #pragma once
 
 #include <vector>
-#include <iostream>
-#include <stack>
-#include <bitset>
+#include <queue>
+#include <utility>
 
+class WeightedGraph {
+    int vertexNum;
+    std::vector<std::vector<std::pair<int, int>>> adjacent; // pair: (neighbor, weight)
 
-class weightedGraph{
-  int vertexNum;
-  std::vector<std::vector<std::pair<int, int>>> adj;
-
-  public:
-    explicit weightedGraph(int V);
-    void addEdge(int u, int v, int wt);
-    void printMST(std::vector<int> &parent);
-    void primMST(int startNode);
+public:
+    explicit WeightedGraph(int V);
+    void addEdge(int u, int v, int weight); // undirected
+    void primMST(int start); // start is the source vertex
 };
