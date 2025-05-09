@@ -1,5 +1,6 @@
 #include <iostream>
 #include "graph.hpp"
+#include "weightedGraph.hpp"
 
 using namespace std;
 
@@ -16,4 +17,17 @@ int main(){
     graph.addEdge(1,0);
 
     graph.topoSort();
+
+    weightedGraph weightedGraph(10);
+    weightedGraph.addEdge(7,6,5);
+    weightedGraph.addEdge(7,5,4);
+    weightedGraph.addEdge(6,4,3);
+    weightedGraph.addEdge(5,4,3);
+    weightedGraph.addEdge(6,3,2);
+    weightedGraph.addEdge(5,2,1);
+    weightedGraph.addEdge(3,1,1);
+    weightedGraph.addEdge(2,1,0);
+    weightedGraph.addEdge(1,0,8);
+
+    weightedGraph.primMST(0);
 }
